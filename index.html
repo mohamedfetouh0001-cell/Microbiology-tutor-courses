@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>كورسات Microbiology Tutor</title>
+<meta name="description" content="3 كورسات عملية في الميكروبيولوجي الصيدلي: Environmental Monitoring، وBacterial Endotoxins Test، وMicrobiological Assay of Antibiotics. افهم الميكرو صح، وطبّقه بثقة.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="كورسات Microbiology Tutor">
+<meta property="og:description" content="3 كورسات عملية في الميكروبيولوجي الصيدلي: Environmental Monitoring، وBacterial Endotoxins Test، وMicrobiological Assay of Antibiotics. افهم الميكرو صح، وطبّقه بثقة.">
+<meta property="og:locale" content="ar_EG">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0E5A64">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='200' fill='%230E5A64'/%3E%3Cg fill='none' stroke='%23F3F6F5' stroke-linecap='round'%3E%3Ccircle cx='475' cy='470' r='260' stroke-width='56'/%3E%3Cpath d='M709 708 L808 807' stroke-width='80'/%3E%3C/g%3E%3Ccircle cx='430' cy='462' r='100' fill='%23F0A030'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Noto+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img,svg{max-width:100%}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Layout: RTL single column; petrol hero band, course "specimen" cards keyed by their pharmacopoeia chapter, orange used only for actions. */
+:root{
+  --petrol:#0E5A64; --petrol-deep:#0A434B; --orange:#F0A030; --orange-ink:#8A5300;
+  --bg:#F3F6F5; --surface:#FFFFFF; --fg:#16302F; --muted:#4F6766; --line:#D5E0DE;
+  --hero-fg:#F3F6F5; --chip:#E3EEEC;
+  --display:"Cairo","Noto Sans Arabic",system-ui,sans-serif;
+  --body:"Noto Sans Arabic","Cairo",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0C1A1C; --surface:#13282B; --fg:#E4EEEC; --muted:#9DB4B2; --line:#24403F;
+  --petrol:#0E5A64; --petrol-deep:#09363C; --hero-fg:#F3F6F5; --chip:#1B3537; --orange-ink:#F6C06A; color-scheme:dark}
+:root[data-theme="dark"]{
+  --bg:#0C1A1C; --surface:#13282B; --fg:#E4EEEC; --muted:#9DB4B2; --line:#24403F;
+  --petrol:#0E5A64; --petrol-deep:#09363C; --hero-fg:#F3F6F5; --chip:#1B3537; --orange-ink:#F6C06A; color-scheme:dark}
+
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.8}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.35;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+
+/* hero */
+.hero{background:var(--petrol);color:var(--hero-fg)}
+.hero .wrap{padding-block:48px 56px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.02em;opacity:.95;margin-bottom:20px}
+.brand svg{width:34px;height:34px}
+.hero h1{font-size:clamp(30px,5vw,46px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .lead{margin-top:16px;max-width:58ch;font-size:17px;opacity:.92}
+.hero-mark{width:200px;max-width:100%}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:16px;padding:12px 22px;border-radius:10px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--orange);color:#2A1A00}
+.btn-ghost{border:1.5px solid rgba(243,246,245,.55);color:var(--hero-fg)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:hover{transform:none}
+
+section{padding-block:56px 8px}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--orange-ink);margin-bottom:6px}
+h2{font-size:clamp(24px,3.4vw,32px);font-weight:800}
+.sub{color:var(--muted);margin-top:8px;max-width:62ch}
+
+/* courses */
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.course{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.ref{align-self:flex-start;font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:13px;direction:ltr;background:var(--chip);color:var(--petrol);padding:3px 10px;border-radius:6px}
+:root[data-theme="dark"] .ref{color:#8FD3DB}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ref{color:#8FD3DB}
+.course h3{font-size:20px;font-weight:700}
+.course h3 span{display:block;font-size:14px;font-weight:600;color:var(--muted);direction:ltr;text-align:right}
+.course ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.course li{position:relative;padding-right:18px}
+.course li::before{content:"";position:absolute;right:0;top:.75em;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.course .ask{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);font-weight:600}
+.course .ask a{color:var(--orange-ink);font-family:var(--display);font-weight:700}
+
+/* two columns */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:24px}
+.split > div{min-width:0}
+.plain{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.plain li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.plain b{font-family:var(--display)}
+
+/* steps */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0 0;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;gap:6px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:800;font-size:22px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--petrol);color:var(--hero-fg)}
+.steps b{font-family:var(--display);font-size:17px}
+.steps p{color:var(--muted)}
+
+/* instructor */
+.instructor{display:flex;gap:20px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:24px}
+.instructor .av{flex:none;width:64px;height:64px;border-radius:50%;background:var(--petrol);display:grid;place-items:center}
+.instructor .av svg{width:40px;height:40px}
+.instructor h3{font-size:20px}
+.instructor .role{color:var(--muted);font-size:14px;direction:ltr;text-align:right}
+.instructor p{margin-top:10px}
+
+/* final cta */
+.final{margin-top:56px;background:var(--petrol-deep);color:var(--hero-fg)}
+.final .wrap{padding-block:44px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.final h2{font-size:clamp(22px,3vw,28px)}
+.final p{opacity:.85;margin-top:6px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.num{direction:ltr;unicode-bidi:isolate;font-weight:600;user-select:all;white-space:nowrap}
+.final .wa{margin-top:10px;opacity:1;font-weight:600}
+footer .wrap{padding-block:24px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+@media (max-width:860px){
+  .courses,.steps{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-mark{display:none}
+}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="brand">
+        <svg viewBox="0 0 1024 1024" aria-hidden="true"><g fill="none" stroke="#F3F6F5" stroke-linecap="round"><circle cx="475" cy="470" r="260" stroke-width="56"/><path d="M709 708 L808 807" stroke-width="80"/></g><g fill="#F0A030"><circle cx="430" cy="462" r="91"/><circle cx="565" cy="364" r="34"/><circle cx="574" cy="548" r="37"/></g></svg>
+        Microbiology Tutor
+      </div>
+      <h1>كورسات عملية في الميكروبيولوجي الصيدلي<br><em>افهم الميكرو صح، وطبّقه بثقة</em></h1>
+      <p class="lead">3 كورسات متخصصة للعاملين في معامل الميكرو بمصانع الأدوية. بنشرح الاختبار، وبنشرح ليه كل خطوة فيه مهمة، علشان تقدر تفسّر النتيجة وتدافع عنها قدام الـ Audit.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://t.me/+8SuvIX8SKtJhNzA0" target="_blank" rel="noopener">سجّل اهتمامك على تليجرام</a>
+        <a class="btn btn-ghost" href="https://wa.me/201557435000" target="_blank" rel="noopener">كلّمنا على واتساب</a>
+        <a class="btn btn-ghost" href="#courses">شوف الكورسات</a>
+      </div>
+    </div>
+    <svg class="hero-mark" viewBox="0 0 1024 1024" role="img" aria-label="رمز Microbiology Tutor">
+      <g fill="none" stroke="#F3F6F5" stroke-linecap="round" stroke-linejoin="round"><circle cx="475" cy="470" r="260" stroke-width="42"/><path d="M292 390 A220 220 0 0 1 458 282" stroke-width="17"/><path d="M676 486 A220 220 0 0 1 522 680" stroke-width="17"/><path d="M665 665 L714 714" stroke-width="38"/><path d="M709 708 L808 807" stroke-width="66"/></g>
+      <g fill="#F0A030"><circle cx="430" cy="462" r="91"/><circle cx="565" cy="364" r="34"/><circle cx="574" cy="548" r="37"/><circle cx="473" cy="590" r="17"/><circle cx="610" cy="452" r="18"/><circle cx="468" cy="338" r="16"/></g>
+    </svg>
+  </div>
+</header>
+
+<main>
+<section id="courses">
+  <div class="wrap">
+    <div class="eyebrow">الكورسات</div>
+    <h2>اختار الكورس اللي يخص شغلك</h2>
+    <p class="sub">كل كورس مبني على المراجع الرسمية ومربوط بالشغل الفعلي داخل المعمل.</p>
+
+    <div class="courses">
+      <article class="course">
+        <span class="ref">EU GMP Annex 1 · USP &lt;1116&gt;</span>
+        <h3>Environmental Monitoring<span>in Pharmaceutical Cleanrooms</span></h3>
+        <ul>
+          <li>الفرق بين الـ Viable والـ Non-Viable Monitoring</li>
+          <li>طرق الـ Air Sampling: الـ Settle Plates والـ Active Air Sampler</li>
+          <li>الـ Surface Sampling بالـ Contact Plates والـ Swabs</li>
+          <li>قراءة النتائج والـ Trends والتعامل مع الـ Alert والـ Action Levels</li>
+        </ul>
+        <p class="ask">مناسب لـ: فريق الـ EM والـ Sterile Areas · <a href="https://t.me/+8SuvIX8SKtJhNzA0" target="_blank" rel="noopener">اسأل عن الموعد</a></p>
+      </article>
+
+      <article class="course">
+        <span class="ref">USP &lt;85&gt; · LAL</span>
+        <h3>Bacterial Endotoxins Test<span>BET</span></h3>
+        <ul>
+          <li>طرق الاختبار: Gel-clot والطرق الكمية</li>
+          <li>حساب الـ Endotoxin Limit</li>
+          <li>حساب الـ MVD واختيار الـ Dilution المناسب</li>
+          <li>فهم النتيجة وربطها بالمنتج</li>
+        </ul>
+        <p class="ask">مناسب لـ: محللي الـ BET والـ Parenterals · <a href="https://t.me/+8SuvIX8SKtJhNzA0" target="_blank" rel="noopener">اسأل عن الموعد</a></p>
+      </article>
+
+      <article class="course">
+        <span class="ref">USP &lt;81&gt;</span>
+        <h3>Microbiological Assay of Antibiotics<span>Potency Testing</span></h3>
+        <ul>
+          <li>خطوات الاختبار بالتفصيل</li>
+          <li>الحسابات وطريقة الوصول للـ Potency</li>
+          <li>الـ Method Validation للطريقة</li>
+          <li>الأخطاء الشائعة اللي بتأثر على النتيجة</li>
+        </ul>
+        <p class="ask">مناسب لـ: معامل الـ Antibiotic Assay · <a href="https://t.me/+8SuvIX8SKtJhNzA0" target="_blank" rel="noopener">اسأل عن الموعد</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">لمين؟</div>
+      <h2>الكورسات دي ليك لو إنت</h2>
+      <ul class="plain">
+        <li><b>متخصص Pharmaceutical Microbiology</b> وعايز تفهم الأساس العلمي ورا الـ SOP.</li>
+        <li><b>QC Analyst</b> في معمل ميكرو بيتعامل مع نتائج محتاجة تفسير.</li>
+        <li><b>بتشتغل في معمل أدوية</b> ومحتاج تجهز لـ Audit أو تحقيق في OOS.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">هتطلع بإيه؟</div>
+      <h2>اللي بيفرق الكورسات دي</h2>
+      <ul class="plain">
+        <li><b>الـ Why قبل الـ How:</b> ليه كل خطوة موجودة، مش بس إزاي تتعمل.</li>
+        <li><b>مواقف حقيقية من المعمل:</b> نتائج غير متوقعة وإزاي تبدأ تقيّمها.</li>
+        <li><b>مراجع واضحة:</b> كل نقطة مربوطة بالمرجع الرسمي اللي تقدر ترجعله.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">المدرب</div>
+    <h2>مين بيشرح؟</h2>
+    <div class="instructor">
+      <div class="av"><svg viewBox="0 0 1024 1024" aria-hidden="true"><g fill="none" stroke="#F3F6F5" stroke-linecap="round"><circle cx="475" cy="470" r="260" stroke-width="60"/><path d="M709 708 L808 807" stroke-width="90"/></g><circle cx="430" cy="462" r="100" fill="#F0A030"/></svg></div>
+      <div>
+        <h3>محمد فتوح</h3>
+        <div class="role">QC Microbiology Team Leader</div>
+        <p>شغال في الـ QC Microbiology بمصانع الأدوية، في الاختبارات الميكروبيولوجية، والـ Sterility Assurance، والـ Environmental Monitoring، والـ Antibiotic Assays، والـ Validation Protocols. بيشرح في الكورسات نفس اللي بيطبقه في المعمل.</p>
+        <p><a href="https://www.linkedin.com/in/mohamed-fetouh" target="_blank" rel="noopener">البروفايل على لينكد إن</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">التسجيل</div>
+    <h2>إزاي تسجّل؟</h2>
+    <ol class="steps">
+      <li><b>ادخل جروب التليجرام</b><p>من الزرار تحت، هتلاقي فيه كل جديد عن الكورسات والويبينارات.</p></li>
+      <li><b>ابعت اسم الكورس</b><p>ابعت رسالة بالكورس اللي يهمك على واتساب <span class="num">+20 155 743 5000</span>، أو كلّمنا على صفحة لينكد إن.</p></li>
+      <li><b>هيوصلك الموعد والتفاصيل</b><p>المواعيد، والمدة، وطريقة الحضور، والرسوم.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">مجانًا</div>
+    <h2>ابدأ بالمحتوى المجاني</h2>
+    <ul class="plain">
+      <li><b>ملف Gap Analysis لمعمل الميكرو:</b> 297 سؤال على 15 Module، وموجود على جروب التليجرام.</li>
+      <li><b>ملفات ويبينار AET (USP &lt;51&gt;):</b> Detailed SOP وTest Worksheet، وموجودين على الجروب.</li>
+      <li><b>شروحات قصيرة وطويلة بالمصري</b> على <a href="https://www.youtube.com/@MicrobiologyTutor" target="_blank" rel="noopener">قناة اليوتيوب</a>.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<div class="final">
+  <div class="wrap">
+    <div>
+      <h2>جاهز تبدأ؟</h2>
+      <p>انضم لجروب التليجرام أو ابعتلنا على واتساب واسأل عن موعد الكورس اللي يهمك.</p>
+      <p class="wa">واتساب: <span class="num">+20 155 743 5000</span></p>
+    </div>
+    <div class="links">
+      <a class="btn btn-primary" href="https://t.me/+8SuvIX8SKtJhNzA0" target="_blank" rel="noopener">جروب التليجرام</a>
+      <a class="btn btn-primary" href="https://wa.me/201557435000" target="_blank" rel="noopener">واتساب</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/company/microbiology-tutor/" target="_blank" rel="noopener">صفحة لينكد إن</a>
+      <a class="btn btn-ghost" href="https://www.youtube.com/@MicrobiologyTutor" target="_blank" rel="noopener">يوتيوب</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Microbiology Tutor · افهم الميكرو صح، وطبّقه بثقة</span>
+    <span>Pharmaceutical Microbiology &amp; Quality Control</span>
+  </div>
+</footer>
+</body>
+</html>
