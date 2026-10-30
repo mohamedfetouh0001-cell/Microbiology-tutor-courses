@@ -16,11 +16,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Noto+Sans+Arabic:wght@400;500;600&display=swap">
 <style>
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0}
 img,svg{max-width:100%}
-html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
 /* Layout: RTL single column; petrol hero band, course "specimen" cards keyed by their pharmacopoeia chapter, orange used only for actions. */
 :root{
   --petrol:#0E5A64; --petrol-deep:#0A434B; --orange:#F0A030; --orange-ink:#8A5300;
@@ -31,7 +31,7 @@ html{scroll-behavior:smooth}
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0C1A1C; --surface:#13282B; --fg:#E4EEEC; --muted:#9DB4B2; --line:#24403F;
-  --petrol:#0E5A64; --petrol-deep:#09363C; --hero-fg:#F3F6F5; --chip:#1B3537; --orange-ink:#F6C06A; color-scheme:dark}
+  --petrol:#0E5A64; --petrol-deep:#09363C; --hero-fg:#F3F6F5; --chip:#1B3537; --orange-ink:#F6C06A; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0C1A1C; --surface:#13282B; --fg:#E4EEEC; --muted:#9DB4B2; --line:#24403F;
   --petrol:#0E5A64; --petrol-deep:#09363C; --hero-fg:#F3F6F5; --chip:#1B3537; --orange-ink:#F6C06A; color-scheme:dark}
@@ -57,7 +57,7 @@ a{color:inherit}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:var(--orange);color:#2A1A00}
 .btn-ghost{border:1.5px solid rgba(243,246,245,.55);color:var(--hero-fg)}
-@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:hover{transform:none}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:hover{transform:none}}
 
 section{padding-block:56px 8px}
 .eyebrow{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--orange-ink);margin-bottom:6px}
@@ -69,7 +69,7 @@ h2{font-size:clamp(24px,3.4vw,32px);font-weight:800}
 .course{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0}
 .ref{align-self:flex-start;font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:13px;direction:ltr;background:var(--chip);color:var(--petrol);padding:3px 10px;border-radius:6px}
 :root[data-theme="dark"] .ref{color:#8FD3DB}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ref{color:#8FD3DB}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ref{color:#8FD3DB}}
 .course h3{font-size:20px;font-weight:700}
 .course h3 span{display:block;font-size:14px;font-weight:600;color:var(--muted);direction:ltr;text-align:right}
 .course ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
